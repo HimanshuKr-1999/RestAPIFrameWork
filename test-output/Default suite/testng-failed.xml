@@ -5,8 +5,12 @@
     <classes>
       <class name="tests.collectionTests">
         <methods>
+          <include name="verifyCreatedObject"/>
+          <include name="getCreatedObject"/>
+          <include name="updateCreatedObject"/>
+          <include name="deleteObjectById"/>
           <include name="setup"/>
-          <include name="basicTest"/>
+          <include name="createObjectInCollectionUsingPOJO"/>
         </methods>
       </class> <!-- tests.collectionTests -->
     </classes>

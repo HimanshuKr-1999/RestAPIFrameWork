@@ -9,12 +9,66 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">4,770</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">14</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">10,185</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">tests.collectionTests</td><td><a href="#m0">createMultipleObjects</a></td><td rowspan="3">1780867419650</td><td rowspan="3">3225</td></tr><tr class="passedeven"><td><a href="#m1">createMultipleObjects</a></td></tr><tr class="passedeven"><td><a href="#m2">createMultipleObjects</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.collectionTests</td><td><a href="#m0">deleteObjectById</a></td><td rowspan="1">1780995594466</td><td rowspan="1">14</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="14">tests.collectionTests</td><td><a href="#m1">basicTest</a></td><td rowspan="1">1780995585270</td><td rowspan="1">2820</td></tr><tr class="passedeven"><td><a href="#m2">createMultipleObjects</a></td><td rowspan="3">1780995589198</td><td rowspan="3">360</td></tr><tr class="passedeven"><td><a href="#m3">createMultipleObjects</a></td></tr><tr class="passedeven"><td><a href="#m4">createMultipleObjects</a></td></tr><tr class="passedeven"><td><a href="#m5">createObjectInCollection</a></td><td rowspan="1">1780995589940</td><td rowspan="1">301</td></tr><tr class="passedeven"><td><a href="#m6">createObjectInCollectionUsingPOJO</a></td><td rowspan="1">1780995590247</td><td rowspan="1">1115</td></tr><tr class="passedeven"><td><a href="#m7">getCollections</a></td><td rowspan="1">1780995591367</td><td rowspan="1">573</td></tr><tr class="passedeven"><td><a href="#m8">getCollectionsUsingResponse</a></td><td rowspan="1">1780995591949</td><td rowspan="1">381</td></tr><tr class="passedeven"><td><a href="#m9">getCreatedObject</a></td><td rowspan="1">1780995593235</td><td rowspan="1">420</td></tr><tr class="passedeven"><td><a href="#m10">getObjectsFromCollectionWithLimit</a></td><td rowspan="1">1780995592334</td><td rowspan="1">409</td></tr><tr class="passedeven"><td><a href="#m11">getObjectsFromCollections</a></td><td rowspan="1">1780995592746</td><td rowspan="1">463</td></tr><tr class="passedeven"><td><a href="#m12">updateCreatedObject</a></td><td rowspan="1">1780995593661</td><td rowspan="1">447</td></tr><tr class="passedeven"><td><a href="#m13">verifyCreatedObject</a></td><td rowspan="1">1780995594113</td><td rowspan="1">351</td></tr><tr class="passedeven"><td><a href="#m14">verifyObjectDeleted</a></td><td rowspan="1">1780995594490</td><td rowspan="1">332</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Laptop</td><td>2026</td><td>10000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Mobile</td><td>2027</td><td>20000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Tablet</td><td>2028</td><td>30000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">tests.collectionTests#deleteObjectById</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalArgumentException: Header value cannot be null
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:60)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:86)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.common.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:53)
+	at io.restassured.internal.common.assertion.AssertParameter$notNull.callStatic(Unknown Source)
+	at io.restassured.internal.RequestSpecificationImpl.header(RequestSpecificationImpl.groovy:869)
+	at tests.collectionTests.deleteObjectById(collectionTests.java:319)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.collectionTests#basicTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Mobile</td><td>2027</td><td>20000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Laptop</td><td>2026</td><td>10000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.collectionTests#createMultipleObjects</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>Tablet</td><td>2028</td><td>30000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.collectionTests#createObjectInCollection</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.collectionTests#createObjectInCollectionUsingPOJO</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.collectionTests#getCollections</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.collectionTests#getCollectionsUsingResponse</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.collectionTests#getCreatedObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">tests.collectionTests#getObjectsFromCollectionWithLimit</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">tests.collectionTests#getObjectsFromCollections</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">tests.collectionTests#updateCreatedObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">tests.collectionTests#verifyCreatedObject</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">tests.collectionTests#verifyObjectDeleted</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

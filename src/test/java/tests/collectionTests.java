@@ -4,6 +4,7 @@ import static io.restassured.RestAssured.*;
 import java.util.HashMap;
 
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.baseTest;
@@ -17,6 +18,9 @@ import specifications.requestSpecifications;
 import specifications.responseSpecifications;
 import testData.dataProviders;
 
+
+@Listeners(
+	    utilities.extentListener.class)
 public class collectionTests extends baseTest {
 	String objectId;
 	@Test
@@ -233,6 +237,7 @@ public class collectionTests extends baseTest {
 			.get(routes.GET_OBJECTS_IN_COLLECTION);
 		
 		response.prettyPrint();
+		
 	}
 	@Test(dependsOnMethods="createObjectInCollectionUsingPOJO")
 	public void getCreatedObject() {    
